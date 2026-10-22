@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'ggsans';
+  src: url('../fonts/ggsans/ggsans-Bold.woff2') format('woff2'),
+       url('../fonts/ggsans/ggsans-Bold.woff') format('woff'),
+       url('../fonts/ggsans/ggsans-Bold.eot') format('eot'),
+       url('../fonts/ggsans/ggsans-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'cotextbold';
+    src: url('../fonts/cotext/cotext.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'cotext';
+    src: url('../fonts/cotext/cotextbold.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'swiss721';
+    src: url('../fonts/swiss721/swiss721.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'dyslexia';
+    src: url('../fonts/opendyslexia/od.otf') format('opentype'),
+        url('../fonts/opendyslexia/od.ttf') format('truetype'),
+        url('../fonts/opendyslexia/od.woff') format('woff'),
+            url('../fonts/opendyslexia/od.woff2') format('woff2')
+
+
+}

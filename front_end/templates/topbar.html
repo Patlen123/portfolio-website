@@ -1,0 +1,44 @@
+{% load static %}
+{% load custom_tags %}
+
+<div id="toastBox"></div>
+<script src="{% static 'js/escape-intercept.js' %}"></script>
+
+<div class="top-bar">
+    <div class="logo">
+        <!-- Show one of the classic logos, generate a random number between 0 and 10 (so 1/10 chance), if the number is 0 then pick one of the classic logos to show at random -->
+        {% random_int 0 10 as random_num %}
+        {% if random_num|is_number:0 %}
+            {% random_int 0 2 as random_num_2 %}
+            {% if random_num_2|is_number:0 %}
+                <img src="{% static 'img/classic_logo.jpg' %}" alt="Classic Logo 2003" class="logo-img">
+            {% elif random_num_2|is_number:1 %}
+                <img src="{% static 'img/classic_logo_2.jpg' %}" alt="Classic Logo 2006" class="logo-img">
+            {% elif random_num_2|is_number:2 %}
+                <img src="{% static 'img/classic_logo_3.jpg' %}" alt="Classic Logo 2010" class="logo-img">
+            {% endif %}
+        {% else %}
+            <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo-img">
+        {% endif %}
+
+
+    </div>
+
+    <div class="menu-options">
+        <a href="{% url '' %}">Home</a>
+        <a href="https://gulgbtqplus.tumblr.com/about">About</a>
+        <a href="https://gulgbtqplus.tumblr.com/resources">General Resources</a>
+        <a href="https://gulgbtqplus.tumblr.com/identityresources">Identity Resources</a>
+        <a onclick="escapeClicked()" style="cursor: pointer">Escape!</a>
+    </div>
+
+
+    <div class="menu-icons-container">
+        <a class="menu-icons" href="https://www.instagram.com/gulgbtqplus/">
+            <img src="{% static 'img/instagram.png' %}" alt="Instagram Icon">
+        </a>
+        <a class="menu-icons" href="https://linktr.ee/GULGBTQplus">
+            <img src="{% static 'img/tree.png' %}" alt="Tree">
+        </a>
+    </div>
+</div>

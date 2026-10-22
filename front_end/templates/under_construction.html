@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University of Glasgow LGBTQ+ Society</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/home-page.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}"/>
+    <link rel="icon" type="image/x-icon" href = "{% static "img/favicon.ico" %}"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Under Construction</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+            font-family: cotextbold, sans-serif;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            color: #333;
+            font-family: cotext, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+            font-family: cotext, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="main-container">
+    <div class="logo">
+        <!-- Replace the image path with your own logo using the static template tag -->
+        <img src="{% static 'img/logo.png' %}" alt="Logo">
+    </div>
+    <h1>Over Construction</h1>
+    <div class="button-container">
+        <div class="discord-button">
+            <a href="#" onclick="callSendInviteRequest()">
+                <img src="{% static 'img/discord-logo.png' %}" alt="Discord Logo" class="button-logo">
+                <span class="button-text">Join our Discord!</span>
+            </a>
+        </div>
+        <div class="src-button">
+            <a href="https://www.glasgowunisrc.org/organisation/gulgbtqplus/">
+                <img src="{% static 'img/src-logo.png' %}" alt="Glasgow SRC Logo" class="button-logo">
+                <span class="button-text">Become a Member</span>
+            </a>
+        </div>
+        <div class="email-button">
+            <a href="https://tinyurl.com/gulgbtqplusmailinglist">
+                <img src="{% static 'img/newsletter.png' %}" alt="An Envelope" class="button-logo">
+                <span class="button-text">Join the Mailing List</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+</body>
+</html>

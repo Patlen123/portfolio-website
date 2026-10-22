@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/about.css" %}"/>
+    <script src="{% static "js/about.js" %}"></script>
+{% endblock head %}
+
+{% block content %}
+<div class="about-container">
+    <div class="image-container">
+        <img src="{% static "img/scrollable.jpg" %}" alt="Placeholder Image">
+        <img src="{% static "img/scrollable.jpg" %}" alt="Placeholder Image">
+    </div>
+    <div class="text-container">
+        <h2>Hey there, we are GULGBTQ+</h2>
+        <p>All that stands for: Glasgow University’s Lesbian, Gay, Bi, Trans, Queer/Questioning Plus Students’ Association. But that's a bit of a mouthful so we tend to go by GULGBTQ+.</p>
+
+        <p>We were founded in 1975 as the Gay Students' Association, we then went through several name changes in order to make ourselves more inclusive of our members. We first changed our name to LesBiGay pretty soon after the founding, then we became GULGBT in the year 2000 to include our Trans friends and we took our most recent name of GULGBTQ+ in 2011 to ensure that we include all of our members.</p>
+
+        <p>GULGBTQ+ exists to provide a social, campaigning, and welfare organization to meet the needs of the LGBTQ+ Undergraduate and Postgraduate community within the University of Glasgow. We are made up of an 18-person committee, are one of the biggest societies/clubs and are the main LGBTQ+ society on campus.</p>
+
+        <p>We run events every work-day of the week (during term time at least). These can range from simple identity meetups (run by our lovely identity officers) where we have a chill time and just chat about the week in a safe-place to our major events (most commonly run on Wednesdays), these tend to be a lot more varied so sometimes we'll do some silly presentations, other times we'll watch a movie and sometimes we'll just go on a classic night out. The goal of running so many events is to make sure that none of our members feel left out, we're a broad society and our members have varied interests so we want to make sure that there's something to do for everyone!</p>
+    </div>
+</div>
+{% endblock content %}

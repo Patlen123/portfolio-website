@@ -1,0 +1,48 @@
+/* Container styles */
+.discord-event {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: cotext, sans-serif;
+}
+
+/* Header styles */
+.event-header {
+  background-color: #313338;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.event-name {
+  font-size: 24px;
+}
+
+/* Details styles */
+.event-details {
+  margin-top: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detail-label {
+  font-weight: bold;
+}
+
+.detail-value {
+  color: #333;
+}
+
+/* Description styles */
+.event-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}

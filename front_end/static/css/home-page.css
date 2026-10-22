@@ -1,0 +1,219 @@
+.image-bar {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    min-height:350px;
+    background-image: url('../img/scrollable.jpg');
+    background-size: cover;
+    background-position: 0% 50%; /* Center the background image */
+    z-index: 9999;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.image-bar-fam {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    min-height:350px;
+    background-image: url('../img/scrollable-2.jpeg');
+    background-size: cover;
+    background-position: 0% 50%; /* Center the background image */
+    z-index: 9999;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(100000px);
+  }
+
+
+
+  .text-overlay {
+    text-align: center;
+    color: #ffffff; /* Adjust the color of the text as needed */
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 1)); /* Add a drop shadow effect */
+    width: 75%;
+      font-family: cotext, sans-serif;
+  }
+
+.text-overlay h1 {
+    font-size: 50px; /* Adjust the font size as needed */
+    margin: 0;
+}
+
+.text-overlay h2 {
+    font-size: 30px; /* Adjust the font size as needed */
+    margin: 0;
+}
+
+.text-overlay p {
+    margin-top: 30px;
+}
+
+
+.discord-button {
+    text-align: center;
+    margin-top: 3%; /* Adjust the margin as needed */
+}
+
+.discord-button a {
+    display: inline-block;
+    background-color: #5865F2;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: ggsans, sans-serif;
+}
+
+.discord-button a:hover {
+    background-color: #5a6f8c;
+}
+
+
+.src-button {
+    text-align: center;
+    margin-top: 3%; /* Adjust the margin as needed */
+}
+
+.src-button a {
+    display: inline-block;
+    background-color: #013766;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: swiss721, sans-serif;
+}
+
+.src-button a:hover {
+    background-color: #0798c5;
+}
+
+.discord-button {
+    text-align: center;
+    margin-top: 3%; /* Adjust the margin as needed */
+}
+
+.discord-button a {
+    display: inline-block;
+    background-color: #5865F2;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: ggsans, sans-serif;
+}
+
+.discord-button a:hover {
+    background-color: #5a6f8c;
+}
+
+
+.email-button {
+    text-align: center;
+    margin-top: 3%; /* Adjust the margin as needed */
+}
+
+.email-button a {
+    display: inline-block;
+    background-color: #333333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: cotextbold, sans-serif;
+}
+
+.email-button a:hover {
+    background-color: #cccccc;
+}
+
+
+
+.button-logo {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.item-wrapper {
+    max-width: 2000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keep the double-column layout */
+    grid-gap: 10px;
+}
+
+/* Update grid settings for stacking on smaller screens */
+@media (max-width: 1000px) {
+    .item-wrapper {
+        grid-template-columns: 1fr; /* Switch to single-column layout */
+    }
+}
+
+
+.event-container {
+    width: 100%;
+    float: left; /* Float left to allow side by side display */
+    padding-right: 10px;
+}
+
+.announcement-container {
+    overflow: hidden; /* Clear floats */
+    width: 100%;
+}
+
+
+/* Clear floats after the last event-container */
+.event-container:last-child {
+    float: none;
+    clear: both;
+}
+
+.headings-container {
+    align-content: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+.dynamic-headings   {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 10px;
+    font-family: dyslexia, ui-rounded;
+}
+
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjust the alignment as needed */
+  }
+
+  .button-container > * {
+    margin-right: 10px; /* Adjust the spacing between elements */
+    margin-bottom: 10px; /* Adjust the spacing between lines */
+  }
+
+  @media (max-width: 600px) {
+    .button-container > * {
+      flex-basis: 100%; /* Set each element to take up full width on small screens */
+      margin-right: 0; /* Remove right margin on small screens */
+      margin-bottom: 10px; /* Adjust the spacing between lines on small screens */
+    }
+  }
+
+.table-container    {
+    max-width: 100%
+}

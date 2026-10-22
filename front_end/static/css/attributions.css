@@ -1,0 +1,42 @@
+.my-content {
+    text-align: center;
+    padding: 20px;
+    font-family: cotext, sans-serif; /* Change the font family to a valid one */
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.license {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: cotext, sans-serif; /* Change the font family to a valid one */
+}
+
+.license p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.license a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.license a:hover {
+    text-decoration: underline;
+}

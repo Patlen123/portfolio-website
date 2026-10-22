@@ -1,0 +1,44 @@
+{% load static %}
+{% load custom_tags %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+    <div class="announcement">
+        <div class="top-of-announce">
+            <div class="avatar">
+                {% with first_grab=True %}
+                    {% for avatar in avatars %}
+                        {% if avatar.author_id == announcement.author.id and first_grab == True %}
+                            <img src="{{ avatar.image_url }}" alt="Avatar">
+                            {% with first_grab=False %}{% endwith %}
+                        {% endif %}
+                    {% endfor %}
+                {% endwith %}
+            </div>
+            <div class="name-timestamp">
+                <div class="name">
+                    {% for guild_id in guild_ids %}
+                        {% if guild_id.id == announcement.author.id %}
+                            {% if guild_id.guild_nick != "NO UNIQUE NAME" %}
+                                {{ guild_id.guild_nick }}
+                            {% elif announcement.author.display_name != None %}
+                                {{ announcement.author.display_name }}
+                            {% else %}
+                                {{ announcement.author.username }}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="timestamp">
+                    {{ announcement.timestamp|to_date|date:"F j, Y H:i" }}
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <p>{{ announcement.content|linebreaks }}</p>
+        </div>
+    </div>
+{% endblock content %}
